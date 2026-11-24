@@ -14,27 +14,28 @@ OUT.mkdir(exist_ok=True)
 NAME = "Serhan Ensar Büdün"
 MISSION_TAG = "MISSION LOG // SEB-2026 · JOURNEY TO THE MOON"
 ROLES = [
-    "computer vision engineer",
+    "AI & computer vision engineer",
     "embedded systems developer",
     "TEKNOFEST team captain ×2",
-    "builds it end to end",
+    "FPV drone pilot",
 ]
-SUBLINE = "Computer Engineering @ Ege University  ·  IEEE CS Chair  ·  İzmir, TR"
+SUBLINE = "Computer Engineering @ Ege University  ·  IEEE CS Türkiye SAC  ·  İzmir, TR"
 COORDS = "LAT 38.4237° N    LON 27.1428° E"
 
 TELEMETRY = [
+    ("#1 TR", "IEEEXtreme 20.0", "#20 of 8,683 worldwide"),
     ("4", "TEKNOFEST teams", "2 as captain"),
     ("0.655", "mAP@50", "LAÇİN aerial detection"),
     ("116K", "labelled images", "trained & shipped"),
-    ("6", "IEEE sub-teams", "led as CS Chair"),
 ]
 
 SECTIONS = {
     "about": ("01", "ABOUT", "who's at the console"),
     "now": ("02", "CURRENT STATUS", "what's running right now"),
     "missions": ("03", "MISSIONS", "selected projects"),
-    "toolkit": ("04", "TOOLKIT", "what I build with"),
-    "signal": ("05", "SIGNAL", "live github telemetry"),
+    "log": ("04", "FLIGHT LOG", "milestones"),
+    "toolkit": ("05", "TOOLKIT", "what I build with"),
+    "signal": ("06", "SIGNAL", "live github telemetry"),
 }
 
 # ───────────────────────── THEME ─────────────────────────
@@ -177,7 +178,7 @@ def telemetry():
     body = f"""
     {stars(w, h, 40, 11)}
     <text class="mono" x="60" y="38" font-size="13" letter-spacing="2" fill="{CYAN}">// TELEMETRY</text>
-    <text class="mono" x="{w-60}" y="38" font-size="12" text-anchor="end" fill="{DIM}">source: serhanensar.me</text>
+    <text class="mono" x="{w-60}" y="38" font-size="12" text-anchor="end" fill="{DIM}">source: serhanensar.me · linkedin</text>
     {''.join(tiles)}"""
     return frame(w, h, body, style)
 

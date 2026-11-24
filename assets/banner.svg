@@ -168,12 +168,12 @@
     <path d="M18,40 V18 H40 M1160,18 H1182 V40 M1182,360 V382 H1160 M40,382 H18 V360" fill="none" stroke="#5EEAD4" stroke-width="2" opacity="0.7"/>
     <text class="mono" x="80" y="98" font-size="14" letter-spacing="2" fill="#5EEAD4" opacity=".9">&gt; MISSION LOG // SEB-2026 · JOURNEY TO THE MOON</text>
     <text class="sans" x="78" y="168" font-size="58" font-weight="800" fill="#E6EDF3" letter-spacing="-1">Serhan Ensar Büdün</text>
-    <text class="role r0 mono" x="80" y="222" font-size="23" fill="#E6EDF3" style="animation-delay:0.0s" data-i="0"><tspan fill="#5EEAD4">$ </tspan>computer vision engineer<tspan class="blink" fill="#5EEAD4"> ▍</tspan></text>
+    <text class="role r0 mono" x="80" y="222" font-size="23" fill="#E6EDF3" style="animation-delay:0.0s" data-i="0"><tspan fill="#5EEAD4">$ </tspan>AI &amp; computer vision engineer<tspan class="blink" fill="#5EEAD4"> ▍</tspan></text>
     <text class="role r1 mono" x="80" y="222" font-size="23" fill="#E6EDF3" style="animation-delay:3.5s" data-i="1"><tspan fill="#5EEAD4">$ </tspan>embedded systems developer<tspan class="blink" fill="#5EEAD4"> ▍</tspan></text>
     <text class="role r2 mono" x="80" y="222" font-size="23" fill="#E6EDF3" style="animation-delay:7.0s" data-i="2"><tspan fill="#5EEAD4">$ </tspan>TEKNOFEST team captain ×2<tspan class="blink" fill="#5EEAD4"> ▍</tspan></text>
-    <text class="role r3 mono" x="80" y="222" font-size="23" fill="#E6EDF3" style="animation-delay:10.5s" data-i="3"><tspan fill="#5EEAD4">$ </tspan>builds it end to end<tspan class="blink" fill="#5EEAD4"> ▍</tspan></text>
+    <text class="role r3 mono" x="80" y="222" font-size="23" fill="#E6EDF3" style="animation-delay:10.5s" data-i="3"><tspan fill="#5EEAD4">$ </tspan>FPV drone pilot<tspan class="blink" fill="#5EEAD4"> ▍</tspan></text>
     <rect x="80" y="252" width="64" height="3" rx="1.5" fill="url(#accent)"/>
-    <text class="sans" x="80" y="292" font-size="18" fill="#8B96AD">Computer Engineering @ Ege University  ·  IEEE CS Chair  ·  İzmir, TR</text>
+    <text class="sans" x="80" y="292" font-size="18" fill="#8B96AD">Computer Engineering @ Ege University  ·  IEEE CS Türkiye SAC  ·  İzmir, TR</text>
     <text class="mono" x="80" y="356" font-size="13" letter-spacing="1.5" fill="#8B96AD" opacity=".8">LAT 38.4237° N    LON 27.1428° E    STATUS <tspan class="pulse" fill="#4ADE80">●</tspan> ONLINE</text>
   </g>
   <rect x="1" y="1" width="1198" height="398" rx="21" fill="none" stroke="#22304F" stroke-width="2"/>
