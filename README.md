@@ -61,12 +61,12 @@ If I don't know a field yet, that's usually the reason I start.
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/SerhanEnsar/tuygun2026"><img src="./assets/demos/tuygun.svg" width="100%" alt="🛩️ TUYGUN & LAÇİN animated illustration"/></a>
-<h3><a href="https://github.com/SerhanEnsar/tuygun2026">🛩️ TUYGUN & LAÇİN</a></h3>
+<a href="https://www.serhanensar.me/en/projects/tuygun"><img src="./assets/demos/tuygun.svg" width="100%" alt="🛩️ TUYGUN & LAÇİN animated illustration"/></a>
+<h3><a href="https://www.serhanensar.me/en/projects/tuygun">🛩️ TUYGUN & LAÇİN</a></h3>
 <sub>TEKNOFEST 2026 · AI in Aviation · team captain</sub>
 <p>YOLOv11 aerial detection, GPS-denied visual odometry, and the <a href="https://github.com/SerhanEnsar/LabelForge">LabelForge</a> and <a href="https://github.com/SerhanEnsar/JSONtoYOLO">JSONtoYOLO</a> data tools.</p>
 <code>Python</code> <code>YOLOv11</code> <code>PyTorch</code><br/>
-<a href="https://www.serhanensar.me/en/projects/tuygun">▶ interactive demo</a> · <a href="https://github.com/SerhanEnsar/tuygun2026">code</a>
+<a href="https://www.serhanensar.me/en/projects/tuygun">▶ TUYGUN demo</a> · <a href="https://www.serhanensar.me/en/projects/lacin">▶ LAÇİN demo</a>
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/SerhanEnsar/synthetic-vision"><img src="./assets/demos/odbars.svg" width="100%" alt="🤖 EGE ODBARS animated illustration"/></a>
@@ -87,12 +87,12 @@ If I don't know a field yet, that's usually the reason I start.
 <a href="https://www.serhanensar.me/en/projects/egenode">▶ interactive demo</a>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/SerhanEnsar/TrayComposer"><img src="./assets/demos/tray.svg" width="100%" alt="🍽️ AkıllıTepsi animated illustration"/></a>
-<h3><a href="https://github.com/SerhanEnsar/TrayComposer">🍽️ AkıllıTepsi</a></h3>
+<img src="./assets/demos/tray.svg" width="100%" alt="🍽️ AkıllıTepsi animated illustration"/>
+<h3>🍽️ AkıllıTepsi</h3>
 <sub>Arduino UNO Q Türkiye · top 100</sub>
 <p>Measures cafeteria food waste right at the tray with computer vision. TrayComposer synthesises tray images for YOLO segmentation training.</p>
 <code>Python</code> <code>YOLO-seg</code> <code>Edge AI</code><br/>
-<a href="https://github.com/SerhanEnsar/TrayComposer">code</a>
+<sub>🔒 code private while the competition runs</sub>
 </td>
 </tr>
 <tr>
@@ -133,12 +133,12 @@ If I don't know a field yet, that's usually the reason I start.
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/SerhanEnsar/Eye2S"><img src="./assets/demos/eye2s.svg" width="100%" alt="👁️ Eye2S animated illustration"/></a>
-<h3><a href="https://github.com/SerhanEnsar/Eye2S">👁️ Eye2S</a></h3>
+<a href="https://www.serhanensar.me/en/projects/eye2s"><img src="./assets/demos/eye2s.svg" width="100%" alt="👁️ Eye2S animated illustration"/></a>
+<h3><a href="https://www.serhanensar.me/en/projects/eye2s">👁️ Eye2S</a></h3>
 <sub>Solo · AR perception</sub>
 <p>Cyberpunk AR desktop perception that learns a new object in six frames, with hand tracking and hot-reloadable plugins.</p>
 <code>Python</code> <code>DINOv2</code> <code>OpenCV</code><br/>
-<a href="https://www.serhanensar.me/en/projects/eye2s">▶ interactive demo</a> · <a href="https://github.com/SerhanEnsar/Eye2S">code</a>
+<a href="https://www.serhanensar.me/en/projects/eye2s">▶ interactive demo</a>
 </td>
 <td width="50%" valign="top">
 <a href="https://www.serhanensar.me"><img src="./assets/demos/portfolio.svg" width="100%" alt="🌙 serhanensar.me animated illustration"/></a>
@@ -153,7 +153,92 @@ If I don't know a field yet, that's usually the reason I start.
 
 <p align="center"><sub>Illustrations are animated sketches of what each project does, not real output.</sub></p>
 
-<img src="./assets/h-log.svg" width="100%" alt="04 — Flight log"/>
+<img src="./assets/h-hangar.svg" width="100%" alt="04 — More from the hangar"/>
+
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://github.com/SerhanEnsar/CallBridge"><img src="./assets/demos/mini-callbridge.svg" width="100%" alt="📞 CallBridge animated illustration"/></a>
+<b><a href="https://github.com/SerhanEnsar/CallBridge">📞 CallBridge</a></b><br/>
+<sub>Calls to the SIM device show up, and get answered, on another device on the same network.</sub><br/>
+<sub><code>Kotlin · Android</code></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://github.com/SerhanEnsar/HotspotTTL"><img src="./assets/demos/mini-hotspot.svg" width="100%" alt="📡 Hotspot TTL animated illustration"/></a>
+<b><a href="https://github.com/SerhanEnsar/HotspotTTL">📡 Hotspot TTL</a></b><br/>
+<sub>One click to make laptop traffic look like the phone's own on a hotspot.</sub><br/>
+<sub><code>Swift · Kotlin · 4 OSes</code></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://github.com/SerhanEnsar/Smart-Telemetry-System"><img src="./assets/demos/mini-telemetry.svg" width="100%" alt="⌚ Smart Telemetry animated illustration"/></a>
+<b><a href="https://github.com/SerhanEnsar/Smart-Telemetry-System">⌚ Smart Telemetry</a></b><br/>
+<sub>Wear OS → ESP32 → Nextion HMI, streaming live at 1 Hz.</sub><br/>
+<sub><code>Kotlin · C++ · ESP32</code></sub>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+<a href="https://github.com/SerhanEnsar/nextion-editor-linux"><img src="./assets/demos/mini-nextion.svg" width="100%" alt="🐧 nextion-editor-linux animated illustration"/></a>
+<b><a href="https://github.com/SerhanEnsar/nextion-editor-linux">🐧 nextion-editor-linux</a></b><br/>
+<sub>Nextion Editor on Ubuntu with Wine, in a single command.</sub><br/>
+<sub><code>Shell · Wine</code></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://github.com/SerhanEnsar/LabelForge"><img src="./assets/demos/mini-labelforge.svg" width="100%" alt="🏷️ LabelForge animated illustration"/></a>
+<b><a href="https://github.com/SerhanEnsar/LabelForge">🏷️ LabelForge</a></b><br/>
+<sub>Labelling and dataset QA tool built for TUYGUN's aerial models.</sub><br/>
+<sub><code>Python · CustomTkinter</code></sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://github.com/SerhanEnsar/JSONtoYOLO"><img src="./assets/demos/mini-jsontoyolo.svg" width="100%" alt="🔁 JSONtoYOLO animated illustration"/></a>
+<b><a href="https://github.com/SerhanEnsar/JSONtoYOLO">🔁 JSONtoYOLO</a></b><br/>
+<sub>Supervisely JSON annotations to YOLOv8/v11 in seconds.</sub><br/>
+<sub><code>Python · GUI + CLI</code></sub>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+<a href="https://www.serhanensar.me/en/projects/stetoskop-akademi"><img src="./assets/demos/mini-stetoskop.svg" width="100%" alt="🩺 Stetoskop Akademi animated illustration"/></a>
+<b><a href="https://www.serhanensar.me/en/projects/stetoskop-akademi">🩺 Stetoskop Akademi</a></b><br/>
+<sub>Freelance tutoring site with zero dependencies, delivered and sold.</sub><br/>
+<sub><code>HTML · CSS · JS · PHP</code></sub>
+</td>
+<td width="33%" valign="top">
+<img src="./assets/demos/mini-prextreme.svg" width="100%" alt="🧮 Prextreme animated illustration"/>
+<b>🧮 Prextreme</b><br/>
+<sub>Java solutions and notes for IEEEXtreme-style problems.</sub><br/>
+<sub><code>Java · 🔒 private</code></sub>
+</td>
+<td width="33%" valign="top">
+<img src="./assets/demos/mini-n8n.svg" width="100%" alt="🕸️ n8n deep scraper animated illustration"/>
+<b>🕸️ n8n deep scraper</b><br/>
+<sub>Paginated startup news into structured data with an LLM step.</sub><br/>
+<sub><code>n8n · Groq · 🔒 private</code></sub>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+<img src="./assets/demos/mini-thumbnail.svg" width="100%" alt="🖼️ Thumbnail Studio animated illustration"/>
+<b>🖼️ Thumbnail Studio</b><br/>
+<sub>YouTube thumbnails from style archetypes, with a consistent avatar.</sub><br/>
+<sub><code>Node · Gemini · 🔒 private</code></sub>
+</td>
+<td width="33%" valign="top">
+<img src="./assets/demos/mini-raspi.svg" width="100%" alt="🍓 Raspberry Pi 5 toolkit animated illustration"/>
+<b>🍓 Raspberry Pi 5 toolkit</b><br/>
+<sub>Headless Ubuntu setup and a one-click RDP launcher from the Mac.</sub><br/>
+<sub><code>Shell · Swift · 🔒 private</code></sub>
+</td>
+<td width="33%" valign="top">
+<img src="./assets/demos/mini-fretrum.svg" width="100%" alt="🎸 FretRum animated illustration"/>
+<b>🎸 FretRum</b><br/>
+<sub>An all-in-one guitarist app: tuner, metronome, chords, tabs. In progress.</sub><br/>
+<sub><code>Kotlin · 🔒 private</code></sub>
+</td>
+</tr>
+</table>
+
+<img src="./assets/h-log.svg" width="100%" alt="05 — Flight log"/>
 
 ```text
 2026-11  NASA Space Apps Challenge · İzmir   Global Nominee · NISAR Time Machine, built in 36 hours
@@ -171,7 +256,7 @@ If I don't know a field yet, that's usually the reason I start.
 2019     TÜBİTAK                              electric motor efficiency research, age 14
 ```
 
-<img src="./assets/h-toolkit.svg" width="100%" alt="05 — Toolkit"/>
+<img src="./assets/h-toolkit.svg" width="100%" alt="06 — Toolkit"/>
 
 | | |
 |:--|:--|
@@ -180,7 +265,7 @@ If I don't know a field yet, that's usually the reason I start.
 | **Apps & Interfaces** | <img src="https://skillicons.dev/icons?i=ts,react,nextjs,tailwind,electron,kotlin,swift,rust&theme=dark" height="40"/><br/><sub>React Native · Expo · Jetpack Compose · Wear OS · CustomTkinter</sub> |
 | **Tooling** | <img src="https://skillicons.dev/icons?i=git,github,githubactions,figma,vscode,sqlite&theme=dark" height="40"/><br/><sub>n8n · PyInstaller · Fusion 360 · Vercel</sub> |
 
-<img src="./assets/h-signal.svg" width="100%" alt="06 — Signal"/>
+<img src="./assets/h-signal.svg" width="100%" alt="07 — Signal"/>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=SerhanEnsar&background=0B1226&border=22304F&ring=5EEAD4&fire=FF7A45&currStreakLabel=5EEAD4&sideLabels=E6EDF3&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=8B96AD&stroke=22304F&border_radius=18" height="170" alt="GitHub streak"/>

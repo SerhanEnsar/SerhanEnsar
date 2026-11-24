@@ -33,9 +33,10 @@ SECTIONS = {
     "about": ("01", "ABOUT", "who's at the console"),
     "now": ("02", "CURRENT STATUS", "what's running right now"),
     "missions": ("03", "MISSIONS", "selected projects"),
-    "log": ("04", "FLIGHT LOG", "milestones"),
-    "toolkit": ("05", "TOOLKIT", "what I build with"),
-    "signal": ("06", "SIGNAL", "live github telemetry"),
+    "log": ("05", "FLIGHT LOG", "milestones"),
+    "hangar": ("04", "MORE FROM THE HANGAR", "smaller builds & tools"),
+    "toolkit": ("06", "TOOLKIT", "what I build with"),
+    "signal": ("07", "SIGNAL", "live github telemetry"),
 }
 
 # ───────────────────────── THEME ─────────────────────────
@@ -215,6 +216,8 @@ def main():
     (OUT / "demos").mkdir(exist_ok=True)
     for key, fn in demos.ALL.items():
         files[f"demos/{key}.svg"] = fn()
+    for key, fn in demos.MINI.items():
+        files[f"demos/mini-{key}.svg"] = fn()
     for name, svg in files.items():
         (OUT / name).write_text(svg, encoding="utf-8")
         print("wrote", OUT / name)

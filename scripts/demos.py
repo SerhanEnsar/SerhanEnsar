@@ -281,3 +281,156 @@ ALL = {
     "tray": tray, "unilate": unilate, "trackpad": trackpad, "ecosystem": ecosystem,
     "homeagent": homeagent, "eye2s": eye2s, "portfolio": portfolio,
 }
+
+
+# ═══════════════ MINI CARDS (400×220) for "more from the hangar" ═══════════════
+MW, MH = 400, 220
+
+
+def mini(title, body, style=""):
+    h = f'<text class="mono" x="20" y="30" font-size="11" letter-spacing="1.2" fill="{CYAN}">// {esc(title)}</text>'
+    return frame(MW, MH, h + body, style)
+
+
+def m_callbridge():
+    return mini("CALLBRIDGE", f"""
+    <rect x="50" y="70" width="110" height="80" rx="8" fill="{BG1}" stroke="{TEXT}" stroke-width="2"/>
+    <text class="mono" x="105" y="168" font-size="10" text-anchor="middle" fill="{DIM}">tablet · SIM</text>
+    <rect x="270" y="58" width="56" height="104" rx="10" fill="{BG1}" stroke="{TEXT}" stroke-width="2"/>
+    <text class="sans" x="298" y="114" font-size="20" text-anchor="middle" fill="{CYAN}">☏</text>
+    <circle cx="298" cy="108" r="20" fill="none" stroke="{CYAN}"><animate attributeName="r" values="18;40" dur="1.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="1.4s" repeatCount="indefinite"/></circle>
+    <path d="M165,110 H262" stroke="{LINE}" stroke-width="2"/>
+    <circle r="4" fill="{ORANGE}"><animateMotion dur="1.4s" repeatCount="indefinite" path="M165,110 H262"/></circle>
+    <text class="mono" x="298" y="190" font-size="10" text-anchor="middle" fill="{DIM}">answer anywhere</text>""")
+
+
+def m_hotspot():
+    arcs = "".join(f'<path d="M{110-r},{110-r*.2} A{r},{r} 0 0 1 {110+r},{110-r*.2}" fill="none" stroke="{CYAN}" stroke-width="2.5" opacity="0">'
+                   f'<animate attributeName="opacity" values="0;1;0" dur="1.8s" begin="{i*.3}s" repeatCount="indefinite"/></path>' for i, r in enumerate((16, 30, 44)))
+    return mini("HOTSPOT TTL", f"""
+    <rect x="92" y="110" width="36" height="66" rx="7" fill="{BG1}" stroke="{TEXT}" stroke-width="2"/>{arcs}
+    <rect x="230" y="96" width="110" height="68" rx="6" fill="{BG1}" stroke="{TEXT}" stroke-width="2"/><rect x="218" y="164" width="134" height="7" rx="3" fill="{TEXT}" opacity=".7"/>
+    <text class="mono" x="285" y="136" font-size="15" font-weight="700" text-anchor="middle" fill="{ORANGE}">TTL 65</text>
+    <text class="mono" x="200" y="200" font-size="10" text-anchor="middle" fill="{DIM}">macOS · Windows · Linux · Android</text>""")
+
+
+def m_telemetry():
+    return mini("SMART TELEMETRY", f"""
+    <circle cx="70" cy="115" r="30" fill="{BG1}" stroke="{TEXT}" stroke-width="2"/><text class="mono" x="70" y="119" font-size="10" text-anchor="middle" fill="{CYAN}">WearOS</text>
+    <rect x="165" y="95" width="70" height="40" rx="4" fill="{BG1}" stroke="{CYAN}" stroke-width="2"/><text class="mono" x="200" y="119" font-size="10" text-anchor="middle" fill="{TEXT}">ESP32</text>
+    <rect x="285" y="88" width="90" height="56" rx="4" fill="{BG0}" stroke="{TEXT}" stroke-width="2"/>
+    <text class="mono" x="330" y="122" font-size="16" text-anchor="middle" fill="{ORANGE}">72 <tspan font-size="9" fill="{DIM}">bpm</tspan></text>
+    <path d="M100,115 H160 M240,115 H280" stroke="{LINE}" stroke-width="2"/>
+    <circle r="4" fill="{CYAN}"><animateMotion dur="1s" repeatCount="indefinite" path="M100,115 H160 L240,115 H280"/></circle>
+    <text class="mono" x="200" y="190" font-size="10" text-anchor="middle" fill="{DIM}">Nextion HMI · live at 1 Hz</text>""")
+
+
+def m_nextion():
+    style = (".l2{opacity:0;animation:l2 5s infinite}@keyframes l2{0%,45%{opacity:0}50%,100%{opacity:1}}"
+             "@media (prefers-reduced-motion:reduce){.l2{opacity:1}}")
+    return mini("NEXTION-EDITOR-LINUX", f"""
+    <rect x="30" y="52" width="340" height="140" rx="8" fill="{BG0}" stroke="{LINE}" stroke-width="2"/>
+    <circle cx="46" cy="66" r="4" fill="{ORANGE}"/><circle cx="60" cy="66" r="4" fill="{DIM}"/><circle cx="74" cy="66" r="4" fill="{DIM}"/>
+    <text class="mono" x="46" y="104" font-size="13" fill="{TEXT}"><tspan fill="{CYAN}">$</tspan> ./install.sh<tspan class="blink" fill="{CYAN}">▍</tspan></text>
+    <text class="mono l2" x="46" y="132" font-size="12" fill="{DIM}">wine prefix ready</text>
+    <text class="mono l2" x="46" y="156" font-size="12" fill="{CYAN}" style="animation-delay:.6s">✓ Nextion Editor running on Ubuntu</text>""", style)
+
+
+def m_labelforge():
+    rows = "".join(f'<circle cx="262" cy="{86+i*24}" r="5" fill="{c}"/><text class="mono" x="274" y="{90+i*24}" font-size="11" fill="{TEXT}">{n}</text>'
+                   for i, (n, c) in enumerate([("vehicle", CYAN), ("person", CYAN), ("UAP", ORANGE), ("UAI", ORANGE)]))
+    return mini("LABELFORGE", f"""
+    <rect x="30" y="56" width="200" height="140" rx="8" fill="#101A33" stroke="{LINE}"/>
+    <rect x="70" y="96" width="0" height="0" fill="{CYAN}" fill-opacity=".15" stroke="{CYAN}" stroke-width="2">
+      <animate attributeName="width" values="0;90;90" keyTimes="0;.5;1" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="0;60;60" keyTimes="0;.5;1" dur="3s" repeatCount="indefinite"/></rect>
+    {rows}""")
+
+
+def m_jsontoyolo():
+    style = (".o{opacity:0;animation:o 4s infinite}@keyframes o{0%,40%{opacity:0}55%,100%{opacity:1}}"
+             "@media (prefers-reduced-motion:reduce){.o{opacity:1}}")
+    out = "".join(f'<text class="mono o" x="230" y="{100+i*22}" font-size="11" fill="{CYAN}" style="animation-delay:{i*.25}s">{t}</text>'
+                  for i, t in enumerate(["0 0.512 0.418 0.120", "1 0.233 0.701 0.064", "2 0.804 0.297 0.151"]))
+    return mini("JSONTOYOLO", f"""
+    <text class="mono" x="30" y="96" font-size="11" fill="{DIM}">{{ "label": "car",</text>
+    <text class="mono" x="40" y="118" font-size="11" fill="{DIM}">"points": [[412,</text>
+    <text class="mono" x="40" y="140" font-size="11" fill="{DIM}">218], ...] }}</text>
+    <path d="M180,118 H215" stroke="{ORANGE}" stroke-width="2"/><path d="M209,112 l7,6 -7,6" fill="none" stroke="{ORANGE}" stroke-width="2"/>
+    {out}
+    <text class="mono" x="200" y="196" font-size="10" text-anchor="middle" fill="{DIM}">Supervisely JSON → YOLOv8/v11 · GUI + CLI</text>""", style)
+
+
+def m_stetoskop():
+    style = ".car{animation:car 6s ease-in-out infinite}@keyframes car{0%,25%{transform:translateX(0)}35%,60%{transform:translateX(-90px)}70%,100%{transform:translateX(0)}}"
+    cards = "".join(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="8" fill="{BG1}" stroke="{c}" stroke-width="2"/><circle cx="{x+w/2}" cy="{y+h*.38}" r="{w*.18}" fill="{DIM}" opacity=".6"/>'
+                    for x, y, w, h, c in [(60, 78, 70, 96, LINE), (155, 64, 90, 124, CYAN), (270, 78, 70, 96, LINE), (365, 78, 70, 96, LINE)])
+    return mini("STETOSKOP AKADEMİ", f"""<defs><clipPath id="cv"><rect x="20" y="50" width="360" height="150"/></clipPath></defs>
+    <g clip-path="url(#cv)"><g class="car">{cards}</g></g>
+    <text class="mono" x="200" y="206" font-size="10" text-anchor="middle" fill="{DIM}">zero dependencies · freelance · delivered</text>""", style)
+
+
+def m_prextreme():
+    return mini("PREXTREME", f"""
+    <text class="mono" x="40" y="96" font-size="12" fill="{DIM}"><tspan fill="{ORANGE}">public class</tspan> Main {{</text>
+    <text class="mono" x="60" y="118" font-size="12" fill="{DIM}">// greedy + next-pos table</text>
+    <text class="mono" x="40" y="140" font-size="12" fill="{DIM}">}}</text>
+    <text class="mono" x="270" y="92" font-size="11" fill="{DIM}">judge</text>
+    <rect x="270" y="102" width="100" height="10" rx="5" fill="#22304F"/>
+    <rect x="270" y="102" width="0" height="10" rx="5" fill="{CYAN}"><animate attributeName="width" values="0;100;100" keyTimes="0;.6;1" dur="3s" repeatCount="indefinite"/></rect>
+    <text class="sans" x="370" y="140" font-size="18" font-weight="800" text-anchor="end" fill="{TEXT}">100</text>
+    <text class="mono" x="200" y="196" font-size="10" text-anchor="middle" fill="{DIM}">IEEEXtreme-style problems in Java</text>""")
+
+
+def m_n8n():
+    nodes = [(60, "scrape"), (150, "parse"), (240, "LLM"), (330, "JSON")]
+    n = "".join(f'<rect x="{x-34}" y="92" width="68" height="40" rx="10" fill="{BG1}" stroke="{ORANGE if t=="LLM" else CYAN}" stroke-width="2"/>'
+                f'<text class="mono" x="{x}" y="116" font-size="11" text-anchor="middle" fill="{TEXT}">{t}</text>' for x, t in nodes)
+    return mini("N8N DEEP SCRAPER", f"""
+    <path d="M94,112 H116 M184,112 H206 M274,112 H296" stroke="{LINE}" stroke-width="2"/>
+    {n}
+    <circle r="4" fill="{CYAN}"><animateMotion dur="2.4s" repeatCount="indefinite" path="M60,150 H330"/></circle>
+    <path d="M60,150 H330" stroke="{LINE}" stroke-dasharray="3 5"/>
+    <text class="mono" x="200" y="192" font-size="10" text-anchor="middle" fill="{DIM}">paginated startup news → structured data</text>""")
+
+
+def m_thumbnail():
+    style = (".a{animation:a 6s infinite}.b{animation:a 6s infinite 3s;opacity:0}"
+             "@keyframes a{0%,45%{opacity:1}50%,95%{opacity:0}100%{opacity:1}}")
+    return mini("THUMBNAIL STUDIO", f"""
+    <rect x="80" y="52" width="240" height="135" rx="8" fill="{BG0}" stroke="{LINE}" stroke-width="2"/>
+    <g class="a"><circle cx="260" cy="125" r="34" fill="{DIM}" opacity=".7"/><rect x="100" y="80" width="110" height="18" rx="3" fill="{CYAN}"/><rect x="100" y="106" width="80" height="18" rx="3" fill="{ORANGE}"/></g>
+    <g class="b"><circle cx="140" cy="125" r="34" fill="{DIM}" opacity=".7"/><rect x="195" y="88" width="105" height="22" rx="3" fill="{ORANGE}"/><rect x="195" y="118" width="70" height="14" rx="3" fill="{CYAN}"/></g>
+    <text class="mono" x="200" y="206" font-size="10" text-anchor="middle" fill="{DIM}">style archetypes · consistent avatar</text>""", style)
+
+
+def m_raspi():
+    return mini("RASPI 5 TOOLKIT", f"""
+    <rect x="40" y="70" width="120" height="84" rx="6" fill="{BG1}" stroke="{CYAN}" stroke-width="2"/>
+    <rect x="60" y="90" width="34" height="34" fill="{BG0}"/><circle cx="130" cy="84" r="3" fill="{ORANGE}" class="pulse"/>
+    <path d="M44,74 h112" stroke="{DIM}" stroke-dasharray="2 3"/>
+    <rect x="240" y="70" width="130" height="84" rx="6" fill="{BG1}" stroke="{TEXT}" stroke-width="2"/>
+    <text class="mono" x="305" y="117" font-size="11" text-anchor="middle" fill="{CYAN}">GNOME · RDP</text>
+    <path d="M165,112 H235" stroke="{LINE}" stroke-width="2"/>
+    <circle r="4" fill="{CYAN}"><animateMotion dur="1.6s" repeatCount="indefinite" path="M165,112 H235"/></circle>
+    <text class="mono" x="200" y="196" font-size="10" text-anchor="middle" fill="{DIM}">headless setup · one-click Mac launcher</text>""")
+
+
+def m_fretrum():
+    strings = "".join(f'<line x1="40" y1="{80+i*14}" x2="250" y2="{80+i*14}" stroke="{DIM}" stroke-width="{1+i*.3:.1f}"/>' for i in range(6))
+    frets = "".join(f'<line x1="{x}" y1="74" x2="{x}" y2="156" stroke="{LINE}" stroke-width="2"/>' for x in range(70, 250, 42))
+    return mini("FRETRUM · IN PROGRESS", f"""
+    {frets}{strings}
+    <path stroke="{CYAN}" stroke-width="2" fill="none"><animate attributeName="d" values="M40,122 Q145,116 250,122;M40,122 Q145,128 250,122;M40,122 Q145,116 250,122" dur=".18s" repeatCount="indefinite"/></path>
+    <circle cx="112" cy="108" r="6" fill="{ORANGE}"/>
+    <path d="M290,150 A50,50 0 0 1 370,150" fill="none" stroke="{LINE}" stroke-width="2"/>
+    <line x1="330" y1="150" x2="330" y2="112" stroke="{CYAN}" stroke-width="2.5"><animateTransform attributeName="transform" type="rotate" values="-25 330 150;8 330 150;-3 330 150;0 330 150" dur="3s" repeatCount="indefinite"/></line>
+    <text class="mono" x="330" y="172" font-size="11" text-anchor="middle" fill="{CYAN}">E</text>
+    <text class="mono" x="200" y="200" font-size="10" text-anchor="middle" fill="{DIM}">tuner · metronome · chords · tabs</text>""")
+
+
+MINI = {
+    "callbridge": m_callbridge, "hotspot": m_hotspot, "telemetry": m_telemetry, "nextion": m_nextion,
+    "labelforge": m_labelforge, "jsontoyolo": m_jsontoyolo, "stetoskop": m_stetoskop, "prextreme": m_prextreme,
+    "n8n": m_n8n, "thumbnail": m_thumbnail, "raspi": m_raspi, "fretrum": m_fretrum,
+}

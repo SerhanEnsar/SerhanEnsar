@@ -23,7 +23,7 @@
   <g clip-path="url(#card)">
     <rect width="1200" height="70" fill="url(#bg)"/>
     
-    <text class="mono" x="34" y="44" font-size="15" fill="#FF7A45">05</text>
+    <text class="mono" x="34" y="44" font-size="15" fill="#FF7A45">06</text>
     <text class="sans" x="70" y="45" font-size="22" font-weight="800" letter-spacing="3" fill="#E6EDF3">TOOLKIT</text>
     <text class="mono" x="209" y="44" font-size="13" fill="#8B96AD">— what I build with</text>
     <rect x="950" y="34" width="210" height="2" rx="1" fill="url(#accent)" opacity=".7"/>
