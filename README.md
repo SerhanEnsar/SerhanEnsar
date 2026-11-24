@@ -170,5 +170,5 @@ A portfolio that runs the projects instead of listing them: a scroll-driven scen
 <p align="center">
   <img src="./assets/footer.svg" width="100%" alt="Let's build something."/>
   <br/>
-  <img src="https://komarev.com/ghpvc/?username=SerhanEnsar&label=transmissions%20received&color=0B1226&style=flat-square" alt="Profile views"/>
+  <img src="https://komarev.com/ghpvc/?username=SerhanEnsar&label=Profile%20views&color=0B1226&style=flat-square" alt="Profile views"/>
 </p>
