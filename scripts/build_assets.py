@@ -19,7 +19,7 @@ ROLES = [
     "TEKNOFEST team captain ×2",
     "FPV drone pilot",
 ]
-SUBLINE = "Computer Engineering @ Ege University  ·  IEEE CS Türkiye SAC  ·  İzmir, TR"
+SUBLINE = "CENG @ Ege University  ·  IEEE CS TR SAC Project & Technical Support  ·  İzmir"
 COORDS = "LAT 38.4237° N    LON 27.1428° E"
 
 TELEMETRY = [

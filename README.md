@@ -16,8 +16,9 @@ the firmware on the microcontroller, the vision model that sees, and the ground 
 
 - 🛰️ Captained **two TEKNOFEST 2026 teams** (TUYGUN, LAÇİN) and led embedded & vision work on two more (EGE ODBARS, EGENODE)
 - 🏆 **IEEEXtreme 20.0: #1 in Türkiye, #20 of 8,683 teams worldwide** with team GevrekOverFlow
-- 🎓 Project & Technical Support team at **IEEE Computer Society Türkiye SAC**, former Computer Society Chair at IEEE Ege
-- 🚁 Certified **FPV drone pilot** (T3 FPV Academy), now pairing flight with my embedded & autonomy projects
+- 🌍 **NASA Space Apps Challenge 2026: Global Nominee** from İzmir with NISAR Time Machine
+- 🎓 Member of the **Project & Technical Support Team at IEEE Computer Society Türkiye SAC** (2026–2027), former Computer Society Chair at IEEE Ege
+- 🚁 **FPV drone pilot**, accepted to the T3 FPV Academy instructor training, pairing flight with my embedded & autonomy projects
 - 📏 One rule I keep: every number I put on screen is a measured one
 
 <img src="./assets/telemetry.svg" width="100%" alt="IEEEXtreme 20.0 #1 in Türkiye (#20 of 8,683) · 4 TEKNOFEST teams (2 as captain) · 0.655 mAP@50 · 116K labelled images"/>
@@ -25,11 +26,12 @@ the firmware on the microcontroller, the vision model that sees, and the ground 
 <img src="./assets/h-now.svg" width="100%" alt="02 — Current status"/>
 
 ```text
+[ GLOBAL   ] NASA Space Apps · İzmir    → GevrekOverFlow is a Global Nominee with NISAR Time Machine
+[ ONLINE   ] IEEE CS TR SAC             → Project & Technical Support Team, 2026–2027 term
 [ BUILDING ] UniLate                    → offline-first university tracker, closed beta before the store launch
-[ ONLINE   ] IEEE CS Türkiye SAC        → project & technical support team, 2026–2027 term
-[ WAITING  ] NASA Space Apps · İzmir    → NISAR Time Machine, local results pending
+[ NEXT     ] GreenTech Ege Ideathon     → through the pre-evaluation round
 [ NEXT     ] AkıllıTepsi                → top 100 in Arduino UNO Q Türkiye, prototype + segmentation models
-[ FLYING   ] FPV                        → stage 1 done, working toward instructor
+[ TRAINING ] T3 FPV Academy             → accepted to the instructor training programme
 ```
 
 <img src="./assets/h-missions.svg" width="100%" alt="03 — Missions"/>
@@ -57,7 +59,7 @@ TEKNOFEST 2026 · autonomous UGV · **embedded & vision lead**<br/>
 <td width="50%" valign="top">
 
 ### 🛰️ [NISAR Time Machine](https://serhanensar.github.io/GevrekOverFlow-SpaceApps2026/)
-NASA Space Apps Challenge 2026 · built in 36 hours<br/>
+NASA Space Apps Challenge 2026 · **Global Nominee** · built in 36 hours<br/>
 Shows what NASA's radar satellite saw before and after a wildfire: through smoke, cloud and night. No login, no radar expertise. [Code](https://github.com/SerhanEnsar/GevrekOverFlow-SpaceApps2026)<br/>
 `Python` `SAR` `MapLibre GL` `rasterio`
 
@@ -124,7 +126,10 @@ A portfolio that runs the projects instead of listing them: a scroll-driven scen
 <img src="./assets/h-log.svg" width="100%" alt="04 — Flight log"/>
 
 ```text
-2026-11  NASA Space Apps Challenge · İzmir   NISAR Time Machine, built and presented in 36 hours
+2026-11  NASA Space Apps Challenge · İzmir   Global Nominee · NISAR Time Machine, built in 36 hours
+2026-11  GreenTech Ege Ideathon               passed the pre-evaluation round
+2026-11  T3 FPV Academy                       accepted to the instructor training programme
+2026-11  IEEE CS Türkiye SAC                  joined the Project & Technical Support Team
 2026-10  IEEEXtreme 20.0                      #1 in Türkiye (of 94) · #20 worldwide (of 8,683)
 2026-10  PreXtreme                            #10 worldwide of 1,432 teams in 6 hours
 2026-10  Arduino UNO Q Türkiye Innovation     AkıllıTepsi in the top 100 ideas
