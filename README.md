@@ -241,7 +241,7 @@ If I don't know a field yet, that's usually the reason I start.
 <img src="./assets/h-log.svg" width="100%" alt="05 — Flight log"/>
 
 ```text
-2026-11  NASA Space Apps Challenge · İzmir   Global Nominee · NISAR Time Machine, built in 36 hours
+2026-11  NASA Space Apps Challenge · İzmir    Global Nominee · NISAR Time Machine, built in 36 hours
 2026-11  GreenTech Ege Ideathon               passed the pre-evaluation round
 2026-11  T3 FPV Academy                       accepted to the instructor training programme
 2026     TÜBİTAK 2209-A                       submitted PhyDose-CT, a low-dose CT research proposal
