@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="70" viewBox="0 0 1200 70" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070F"/><stop offset=".55" stop-color="#0B1226"/><stop offset="1" stop-color="#121B36"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5EEAD4"/><stop offset="1" stop-color="#7DD3FC"/>
+    </linearGradient>
+    <clipPath id="card"><rect width="1200" height="70" rx="22"/></clipPath>
+    
+  </defs>
+  <style>
+  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+  .mono{font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace}
+  .tw{animation:tw 3.2s ease-in-out infinite}
+  @keyframes tw{0%,100%{opacity:.15}50%{opacity:1}}
+  .blink{animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .pulse{animation:pulse 1.6s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="70" fill="url(#bg)"/>
+    
+    <text class="mono" x="34" y="44" font-size="15" fill="#FF7A45">01</text>
+    <text class="sans" x="70" y="45" font-size="22" font-weight="800" letter-spacing="3" fill="#E6EDF3">ABOUT</text>
+    <text class="mono" x="175" y="44" font-size="13" fill="#8B96AD">— who's at the console</text>
+    <rect x="950" y="34" width="210" height="2" rx="1" fill="url(#accent)" opacity=".7"/>
+    <circle class="pulse" cx="1166" cy="35" r="4" fill="#5EEAD4"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="68" rx="21" fill="none" stroke="#22304F" stroke-width="2"/>
+</svg>
