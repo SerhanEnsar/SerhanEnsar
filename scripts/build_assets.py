@@ -24,9 +24,9 @@ COORDS = "LAT 38.4237° N    LON 27.1428° E"
 
 TELEMETRY = [
     ("#1 TR", "IEEEXtreme 20.0", "#20 of 8,683 worldwide"),
+    ("Global", "NASA Space Apps 2026", "nominee · NISAR Time Machine"),
     ("4", "TEKNOFEST teams", "2 as captain"),
-    ("0.655", "mAP@50", "LAÇİN aerial detection"),
-    ("116K", "labelled images", "trained & shipped"),
+    ("2209-A", "TÜBİTAK research", "proposal under review"),
 ]
 
 SECTIONS = {
@@ -211,6 +211,10 @@ def main():
     files = {"banner.svg": banner(), "telemetry.svg": telemetry(), "footer.svg": footer()}
     for key, (num, title, sub) in SECTIONS.items():
         files[f"h-{key}.svg"] = header(num, title, sub)
+    import demos
+    (OUT / "demos").mkdir(exist_ok=True)
+    for key, fn in demos.ALL.items():
+        files[f"demos/{key}.svg"] = fn()
     for name, svg in files.items():
         (OUT / name).write_text(svg, encoding="utf-8")
         print("wrote", OUT / name)

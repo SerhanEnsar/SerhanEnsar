@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070F"/><stop offset=".55" stop-color="#0B1226"/><stop offset="1" stop-color="#121B36"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5EEAD4"/><stop offset="1" stop-color="#7DD3FC"/>
+    </linearGradient>
+    <clipPath id="card"><rect width="600" height="300" rx="22"/></clipPath>
+    
+  </defs>
+  <style>
+  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+  .mono{font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace}
+  .tw{animation:tw 3.2s ease-in-out infinite}
+  @keyframes tw{0%,100%{opacity:.15}50%{opacity:1}}
+  .blink{animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .pulse{animation:pulse 1.6s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+.lock{opacity:0;animation:lock 6s infinite}@keyframes lock{0%,55%{opacity:0}60%,90%{opacity:1}100%{opacity:0}}@media (prefers-reduced-motion:reduce){.lock{opacity:1}}</style>
+  <g clip-path="url(#card)">
+    <rect width="600" height="300" fill="url(#bg)"/>
+    <text class="mono" x="26" y="36" font-size="12" letter-spacing="1.5" fill="#5EEAD4">// EYE2S · AR PERCEPTION</text><text class="mono" x="574" y="36" font-size="11" text-anchor="end" fill="#8B96AD"><tspan class="pulse" fill="#FF7A45">●</tspan> SOLO</text>
+    <text class="mono" x="40" y="72" font-size="11" fill="#8B96AD">few-shot: 6 frames</text>
+    <rect x="40" y="80" width="34" height="26" rx="4" fill="#1A2440" stroke="#22304F"/><rect x="40" y="80" width="34" height="26" rx="4" fill="#5EEAD4" opacity="0"><animate attributeName="opacity" values="0;0;.8;.8;0" keyTimes="0;0.00;0.02;.85;1" dur="6s" repeatCount="indefinite"/></rect><rect x="82" y="80" width="34" height="26" rx="4" fill="#1A2440" stroke="#22304F"/><rect x="82" y="80" width="34" height="26" rx="4" fill="#5EEAD4" opacity="0"><animate attributeName="opacity" values="0;0;.8;.8;0" keyTimes="0;0.08;0.10;.85;1" dur="6s" repeatCount="indefinite"/></rect><rect x="124" y="80" width="34" height="26" rx="4" fill="#1A2440" stroke="#22304F"/><rect x="124" y="80" width="34" height="26" rx="4" fill="#5EEAD4" opacity="0"><animate attributeName="opacity" values="0;0;.8;.8;0" keyTimes="0;0.16;0.18;.85;1" dur="6s" repeatCount="indefinite"/></rect><rect x="166" y="80" width="34" height="26" rx="4" fill="#1A2440" stroke="#22304F"/><rect x="166" y="80" width="34" height="26" rx="4" fill="#5EEAD4" opacity="0"><animate attributeName="opacity" values="0;0;.8;.8;0" keyTimes="0;0.24;0.26;.85;1" dur="6s" repeatCount="indefinite"/></rect><rect x="208" y="80" width="34" height="26" rx="4" fill="#1A2440" stroke="#22304F"/><rect x="208" y="80" width="34" height="26" rx="4" fill="#5EEAD4" opacity="0"><animate attributeName="opacity" values="0;0;.8;.8;0" keyTimes="0;0.32;0.34;.85;1" dur="6s" repeatCount="indefinite"/></rect><rect x="250" y="80" width="34" height="26" rx="4" fill="#1A2440" stroke="#22304F"/><rect x="250" y="80" width="34" height="26" rx="4" fill="#5EEAD4" opacity="0"><animate attributeName="opacity" values="0;0;.8;.8;0" keyTimes="0;0.40;0.42;.85;1" dur="6s" repeatCount="indefinite"/></rect>
+    <rect x="40" y="124" width="250" height="150" rx="10" fill="#101A33" stroke="#22304F"/>
+    <rect x="140" y="178" width="46" height="54" rx="6" fill="#8B96AD" opacity=".6"/><path d="M186,190 h10 a12,12 0 0 1 0,24 h-10" fill="none" stroke="#8B96AD" stroke-width="5" opacity=".6"/>
+    <g class="lock"><path d="M118,160 h14 M118,160 v14 M212,160 h-14 M212,160 v14 M118,242 h14 M118,242 v-14 M212,242 h-14 M212,242 v-14" stroke="#FF7A45" stroke-width="2.5" fill="none"/>
+      <text class="mono" x="118" y="152" font-size="10" fill="#FF7A45">learned: mug</text></g>
+    <g transform="translate(440,190)" fill="none" stroke="#5EEAD4" stroke-width="2.5" stroke-linecap="round">
+      <path d="M-20,30 v-50 M-6,30 v-62 M8,30 v-56 M22,30 v-40 M-34,40 q-6,-24 14,-10"/>
+      <circle cx="-6" cy="-32" r="4" fill="#5EEAD4" class="pulse"/></g>
+    <text class="mono" x="440" y="262" font-size="11" text-anchor="middle" fill="#8B96AD">hand tracking</text>
+  </g>
+  <rect x="1" y="1" width="598" height="298" rx="21" fill="none" stroke="#22304F" stroke-width="2"/>
+</svg>

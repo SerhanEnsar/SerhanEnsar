@@ -11,22 +11,26 @@
 
 <img src="./assets/h-about.svg" width="100%" alt="01 — About"/>
 
-I'm a Computer Engineering student at **Ege University** who likes building the whole stack of a machine:
-the firmware on the microcontroller, the vision model that sees, and the ground station you drive it from.
+I'm a Computer Engineering student at **Ege University**, and a curious one. I like learning whatever a problem asks for
+and working where disciplines meet: computer vision on drones and rovers, firmware on microcontrollers,
+radar data from a NASA satellite, low-dose CT physics, and mobile apps people actually use.
+If I don't know a field yet, that's usually the reason I start.
 
 - 🛰️ Captained **two TEKNOFEST 2026 teams** (TUYGUN, LAÇİN) and led embedded & vision work on two more (EGE ODBARS, EGENODE)
 - 🏆 **IEEEXtreme 20.0: #1 in Türkiye, #20 of 8,683 teams worldwide** with team GevrekOverFlow
 - 🌍 **NASA Space Apps Challenge 2026: Global Nominee** from İzmir with NISAR Time Machine
 - 🎓 Member of the **Project & Technical Support Team at IEEE Computer Society Türkiye SAC** (2026–2027), former Computer Society Chair at IEEE Ege
 - 🚁 **FPV drone pilot**, accepted to the T3 FPV Academy instructor training, pairing flight with my embedded & autonomy projects
+- 🧬 Waiting on a **TÜBİTAK 2209-A** research proposal in medical imaging (PhyDose-CT)
 - 📏 One rule I keep: every number I put on screen is a measured one
 
-<img src="./assets/telemetry.svg" width="100%" alt="IEEEXtreme 20.0 #1 in Türkiye (#20 of 8,683) · 4 TEKNOFEST teams (2 as captain) · 0.655 mAP@50 · 116K labelled images"/>
+<img src="./assets/telemetry.svg" width="100%" alt="IEEEXtreme 20.0 #1 in Türkiye (#20 of 8,683) · NASA Space Apps 2026 Global Nominee · 4 TEKNOFEST teams (2 as captain) · TÜBİTAK 2209-A proposal under review"/>
 
 <img src="./assets/h-now.svg" width="100%" alt="02 — Current status"/>
 
 ```text
 [ GLOBAL   ] NASA Space Apps · İzmir    → GevrekOverFlow is a Global Nominee with NISAR Time Machine
+[ REVIEW   ] TÜBİTAK 2209-A             → PhyDose-CT research proposal, awaiting results
 [ ONLINE   ] IEEE CS TR SAC             → Project & Technical Support Team, 2026–2027 term
 [ BUILDING ] UniLate                    → offline-first university tracker, closed beta before the store launch
 [ NEXT     ] GreenTech Ege Ideathon     → through the pre-evaluation round
@@ -39,89 +43,115 @@ the firmware on the microcontroller, the vision model that sees, and the ground 
 <table>
 <tr>
 <td width="50%" valign="top">
-
-### 🛩️ [TUYGUN & LAÇİN](https://github.com/SerhanEnsar/tuygun2026)
-TEKNOFEST 2026 · AI in Aviation · **team captain**<br/>
-YOLOv11 aerial detection (**mAP@50 0.655** on 116K images), GPS-denied visual odometry, plus the [LabelForge](https://github.com/SerhanEnsar/LabelForge) and [JSONtoYOLO](https://github.com/SerhanEnsar/JSONtoYOLO) data tools.<br/>
-`Python` `YOLOv11` `PyTorch` `FastAPI`
-
+<img src="./assets/demos/phydose.svg" width="100%" alt="🧬 PhyDose-CT animated illustration"/>
+<h3>🧬 PhyDose-CT</h3>
+<sub>TÜBİTAK 2209-A · research proposal under review · team of 4</sub>
+<p>Physics-informed denoising for low-dose lung CT that keeps nodule volume honest, and checks the measured volume against the scanner's own physics before a follow-up decision.</p>
+<code>PyTorch</code> <code>CT physics</code> <code>Medical imaging</code><br/>
+<sub>🔒 code private until the review is out</sub>
 </td>
 <td width="50%" valign="top">
-
-### 🤖 [EGE ODBARS](https://github.com/SerhanEnsar/synthetic-vision)
-TEKNOFEST 2026 · autonomous UGV · **embedded & vision lead**<br/>
-6×4 rocker-bogie rover with a live React + Electron ground station, YOLOv8 + ByteTrack, and a Blender-rendered synthetic dataset generator.<br/>
-`Blender bpy` `OpenCV` `React` `Electron`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🛰️ [NISAR Time Machine](https://serhanensar.github.io/GevrekOverFlow-SpaceApps2026/)
-NASA Space Apps Challenge 2026 · **Global Nominee** · built in 36 hours<br/>
-Shows what NASA's radar satellite saw before and after a wildfire: through smoke, cloud and night. No login, no radar expertise. [Code](https://github.com/SerhanEnsar/GevrekOverFlow-SpaceApps2026)<br/>
-`Python` `SAR` `MapLibre GL` `rasterio`
-
-</td>
-<td width="50%" valign="top">
-
-### 📱 [UniLate](https://www.serhanensar.me/en/projects/unilate)
-Founder & developer · iOS & Android<br/>
-University attendance, grade and schedule tracker. No backend, no account, no data collection: everything stays on the phone.<br/>
-`React Native` `Expo` `TypeScript` `Figma`
-
+<a href="https://serhanensar.github.io/GevrekOverFlow-SpaceApps2026/"><img src="./assets/demos/nisar.svg" width="100%" alt="🛰️ NISAR Time Machine animated illustration"/></a>
+<h3><a href="https://serhanensar.github.io/GevrekOverFlow-SpaceApps2026/">🛰️ NISAR Time Machine</a></h3>
+<sub>NASA Space Apps Challenge 2026 · Global Nominee · 36 hours</sub>
+<p>Shows what NASA's radar satellite saw before and after a wildfire, through smoke, cloud and night. No login, no radar expertise.</p>
+<code>Python</code> <code>SAR</code> <code>MapLibre GL</code> <code>rasterio</code><br/>
+<a href="https://serhanensar.github.io/GevrekOverFlow-SpaceApps2026/">▶ live app</a> · <a href="https://github.com/SerhanEnsar/GevrekOverFlow-SpaceApps2026">code</a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-
-### 🖐️ [TrackpadProMax](https://github.com/SerhanEnsar/TrackpadProMax) ⭐
-Unlock the MacBook's Force Touch trackpad: pressure-sensitive gestures, custom taps and haptic feedback.<br/>
-`Swift` `macOS`
-
+<a href="https://github.com/SerhanEnsar/tuygun2026"><img src="./assets/demos/tuygun.svg" width="100%" alt="🛩️ TUYGUN & LAÇİN animated illustration"/></a>
+<h3><a href="https://github.com/SerhanEnsar/tuygun2026">🛩️ TUYGUN & LAÇİN</a></h3>
+<sub>TEKNOFEST 2026 · AI in Aviation · team captain</sub>
+<p>YOLOv11 aerial detection, GPS-denied visual odometry, and the <a href="https://github.com/SerhanEnsar/LabelForge">LabelForge</a> and <a href="https://github.com/SerhanEnsar/JSONtoYOLO">JSONtoYOLO</a> data tools.</p>
+<code>Python</code> <code>YOLOv11</code> <code>PyTorch</code><br/>
+<a href="https://www.serhanensar.me/en/projects/tuygun">▶ interactive demo</a> · <a href="https://github.com/SerhanEnsar/tuygun2026">code</a>
 </td>
 <td width="50%" valign="top">
-
-### 🔗 [ecosystem-connector](https://github.com/SerhanEnsar/ecosystem-connector)
-Mac, Windows and Android as one ecosystem: fast transfer, linked files, shared clipboard and handoff over LAN.<br/>
-`Rust` `Networking`
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🏠 [HomeAgent](https://github.com/SerhanEnsar/HomeAgent)
-One Raspberry Pi 5 hub, four client surfaces: web panel, Telegram bot, ESP32-S3 touchscreen and a [Wear OS app](https://github.com/SerhanEnsar/HomeAgent_Wear).<br/>
-`FastAPI` `Gemini` `Kotlin` `ESP32`
-
-</td>
-<td width="50%" valign="top">
-
-### 👁️ [Eye2S](https://github.com/SerhanEnsar/Eye2S)
-Cyberpunk AR desktop perception that learns a new object in six frames, with hand tracking and hot-reloadable plugins.<br/>
-`Python` `DINOv2` `OpenCV`
-
+<a href="https://github.com/SerhanEnsar/synthetic-vision"><img src="./assets/demos/odbars.svg" width="100%" alt="🤖 EGE ODBARS animated illustration"/></a>
+<h3><a href="https://github.com/SerhanEnsar/synthetic-vision">🤖 EGE ODBARS</a></h3>
+<sub>TEKNOFEST 2026 · autonomous UGV · embedded & vision lead</sub>
+<p>6×4 rocker-bogie rover with a live React + Electron ground station, YOLOv8 + ByteTrack, and a Blender-rendered synthetic dataset generator.</p>
+<code>Blender bpy</code> <code>OpenCV</code> <code>Electron</code><br/>
+<a href="https://www.serhanensar.me/en/projects/ege-odbars">▶ interactive demo</a> · <a href="https://github.com/SerhanEnsar/synthetic-vision">code</a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-
-### 🍽️ [AkıllıTepsi · TrayComposer](https://github.com/SerhanEnsar/TrayComposer)
-Measuring cafeteria food waste at the tray with computer vision. TrayComposer synthesises tray images for YOLO segmentation training.<br/>
-`Python` `YOLO-seg` `Edge AI`
-
+<a href="https://www.serhanensar.me/en/projects/egenode"><img src="./assets/demos/egenode.svg" width="100%" alt="📦 EGENODE animated illustration"/></a>
+<h3><a href="https://www.serhanensar.me/en/projects/egenode">📦 EGENODE</a></h3>
+<sub>TEKNOFEST 2026 · Robolig · embedded software lead</sub>
+<p>Logistics robot with RFID, an IMU and a 4-DOF arm on one 240 MHz dual-core Deneyap (ESP32) board.</p>
+<code>C++</code> <code>ESP32</code> <code>RFID</code> <code>IMU</code><br/>
+<a href="https://www.serhanensar.me/en/projects/egenode">▶ interactive demo</a>
 </td>
 <td width="50%" valign="top">
-
-### 🌙 [serhanensar.me](https://www.serhanensar.me)
-A portfolio that runs the projects instead of listing them: a scroll-driven scene engine and in-browser ONNX object detection.<br/>
-`Next.js` `TypeScript` `WebGL` `onnxruntime-web`
-
+<a href="https://github.com/SerhanEnsar/TrayComposer"><img src="./assets/demos/tray.svg" width="100%" alt="🍽️ AkıllıTepsi animated illustration"/></a>
+<h3><a href="https://github.com/SerhanEnsar/TrayComposer">🍽️ AkıllıTepsi</a></h3>
+<sub>Arduino UNO Q Türkiye · top 100</sub>
+<p>Measures cafeteria food waste right at the tray with computer vision. TrayComposer synthesises tray images for YOLO segmentation training.</p>
+<code>Python</code> <code>YOLO-seg</code> <code>Edge AI</code><br/>
+<a href="https://github.com/SerhanEnsar/TrayComposer">code</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://www.serhanensar.me/en/projects/unilate"><img src="./assets/demos/unilate.svg" width="100%" alt="📱 UniLate animated illustration"/></a>
+<h3><a href="https://www.serhanensar.me/en/projects/unilate">📱 UniLate</a></h3>
+<sub>Founder & developer · iOS & Android</sub>
+<p>University attendance, grade and schedule tracker. No backend, no account, no data collection: everything stays on the phone.</p>
+<code>React Native</code> <code>Expo</code> <code>TypeScript</code><br/>
+<a href="https://www.serhanensar.me/en/projects/unilate">▶ interactive demo</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/SerhanEnsar/TrackpadProMax"><img src="./assets/demos/trackpad.svg" width="100%" alt="🖐️ TrackpadProMax animated illustration"/></a>
+<h3><a href="https://github.com/SerhanEnsar/TrackpadProMax">🖐️ TrackpadProMax</a></h3>
+<sub>macOS utility · ⭐ most starred</sub>
+<p>Unlocks the MacBook's Force Touch trackpad: pressure-sensitive gestures, custom taps and haptic feedback.</p>
+<code>Swift</code> <code>macOS</code><br/>
+<a href="https://github.com/SerhanEnsar/TrackpadProMax">code</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/SerhanEnsar/ecosystem-connector"><img src="./assets/demos/ecosystem.svg" width="100%" alt="🔗 ecosystem-connector animated illustration"/></a>
+<h3><a href="https://github.com/SerhanEnsar/ecosystem-connector">🔗 ecosystem-connector</a></h3>
+<sub>Cross-platform · Rust</sub>
+<p>Mac, Windows and Android as one ecosystem: fast transfer, linked files, shared clipboard and handoff over LAN.</p>
+<code>Rust</code> <code>Networking</code><br/>
+<a href="https://github.com/SerhanEnsar/ecosystem-connector">code</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/SerhanEnsar/HomeAgent"><img src="./assets/demos/homeagent.svg" width="100%" alt="🏠 HomeAgent animated illustration"/></a>
+<h3><a href="https://github.com/SerhanEnsar/HomeAgent">🏠 HomeAgent</a></h3>
+<sub>Personal · self-hosted</sub>
+<p>One Raspberry Pi 5 hub, four client surfaces: web panel, Telegram bot, ESP32-S3 touchscreen and a <a href="https://github.com/SerhanEnsar/HomeAgent_Wear">Wear OS app</a>.</p>
+<code>FastAPI</code> <code>Gemini</code> <code>Kotlin</code> <code>ESP32</code><br/>
+<a href="https://www.serhanensar.me/en/projects/homeagent">▶ interactive demo</a> · <a href="https://github.com/SerhanEnsar/HomeAgent">code</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/SerhanEnsar/Eye2S"><img src="./assets/demos/eye2s.svg" width="100%" alt="👁️ Eye2S animated illustration"/></a>
+<h3><a href="https://github.com/SerhanEnsar/Eye2S">👁️ Eye2S</a></h3>
+<sub>Solo · AR perception</sub>
+<p>Cyberpunk AR desktop perception that learns a new object in six frames, with hand tracking and hot-reloadable plugins.</p>
+<code>Python</code> <code>DINOv2</code> <code>OpenCV</code><br/>
+<a href="https://www.serhanensar.me/en/projects/eye2s">▶ interactive demo</a> · <a href="https://github.com/SerhanEnsar/Eye2S">code</a>
+</td>
+<td width="50%" valign="top">
+<a href="https://www.serhanensar.me"><img src="./assets/demos/portfolio.svg" width="100%" alt="🌙 serhanensar.me animated illustration"/></a>
+<h3><a href="https://www.serhanensar.me">🌙 serhanensar.me</a></h3>
+<sub>Design & code by me · TR / EN</sub>
+<p>A portfolio that runs the projects instead of listing them: a scroll-driven scene engine and in-browser ONNX object detection.</p>
+<code>Next.js</code> <code>WebGL</code> <code>onnxruntime-web</code><br/>
+<a href="https://www.serhanensar.me">▶ visit</a>
 </td>
 </tr>
 </table>
+
+<p align="center"><sub>Illustrations are animated sketches of what each project does, not real output.</sub></p>
 
 <img src="./assets/h-log.svg" width="100%" alt="04 — Flight log"/>
 
@@ -129,6 +159,7 @@ A portfolio that runs the projects instead of listing them: a scroll-driven scen
 2026-11  NASA Space Apps Challenge · İzmir   Global Nominee · NISAR Time Machine, built in 36 hours
 2026-11  GreenTech Ege Ideathon               passed the pre-evaluation round
 2026-11  T3 FPV Academy                       accepted to the instructor training programme
+2026     TÜBİTAK 2209-A                       submitted PhyDose-CT, a low-dose CT research proposal
 2026-11  IEEE CS Türkiye SAC                  joined the Project & Technical Support Team
 2026-10  IEEEXtreme 20.0                      #1 in Türkiye (of 94) · #20 worldwide (of 8,683)
 2026-10  PreXtreme                            #10 worldwide of 1,432 teams in 6 hours
