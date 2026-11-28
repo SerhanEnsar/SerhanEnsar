@@ -17,8 +17,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate activity graph
-        run: python3 scripts/activity_graph.py ${{ github.repository_owner }} dist/activity-graph.svg
+      - name: Generate activity graph & language card
+        run: |
+          python3 scripts/activity_graph.py ${{ github.repository_owner }} dist/activity-graph.svg
+          python3 scripts/top_langs.py ${{ github.repository_owner }} dist/top-langs.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

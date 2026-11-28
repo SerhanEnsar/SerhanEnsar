@@ -269,7 +269,7 @@ If I don't know a field yet, that's usually the reason I start.
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=SerhanEnsar&background=0B1226&border=22304F&ring=5EEAD4&fire=FF7A45&currStreakLabel=5EEAD4&sideLabels=E6EDF3&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=8B96AD&stroke=22304F&border_radius=18" height="170" alt="GitHub streak"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SerhanEnsar&layout=compact&langs_count=8&bg_color=0B1226&title_color=5EEAD4&text_color=E6EDF3&border_color=22304F&border_radius=18&hide=html,jupyter%20notebook,shell" height="170" alt="Top languages"/>
+  <img src="https://raw.githubusercontent.com/SerhanEnsar/SerhanEnsar/output/top-langs.svg" height="170" alt="Top languages"/>
 </p>
 
 <p align="center">
