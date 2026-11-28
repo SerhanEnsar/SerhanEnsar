@@ -273,7 +273,7 @@ If I don't know a field yet, that's usually the reason I start.
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=SerhanEnsar&bg_color=0B1226&color=8B96AD&line=5EEAD4&point=FF7A45&area=true&area_color=5EEAD4&hide_border=true&radius=18&custom_title=Contribution%20trajectory" width="100%" alt="Contribution graph"/>
+  <img src="https://raw.githubusercontent.com/SerhanEnsar/SerhanEnsar/output/activity-graph.svg" width="100%" alt="Contribution graph"/>
 </p>
 
 <p align="center">

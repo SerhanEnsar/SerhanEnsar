@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Generate contribution snake & activity graph
 
 on:
   schedule:
@@ -15,6 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate activity graph
+        run: python3 scripts/activity_graph.py ${{ github.repository_owner }} dist/activity-graph.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
